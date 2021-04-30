@@ -184,14 +184,14 @@ div.html > div {
 }
 div.sql > div {
   background-color: rgb(236, 240, 24);
-  width: 60%;
+  width: 77%;
 }
 div.git > div {
   background-color: rgb(18, 153, 243);
   width: 60%;
 }
 div.js > div {
-  background-color: rgb(214, 22, 54);
+  background-color: rgb(15, 15, 15);
   width: 70%;
 }
 div.react > div {
@@ -226,7 +226,7 @@ div.lan-name {
   justify-self: center;
   border-radius: 20px;
   background-color: rgb(170, 202, 233);
-  border:5px solid chocolate;
+  border:5px solid rgb(235, 233, 232);
   /* background-color: rgb(177, 124, 246); */
 }
 .omg{
@@ -256,7 +256,7 @@ div.lan-name {
 }
 .contact-me i {
   font-size:5vw;
-  color: rgb(240, 130, 20);
+  color: rgb(10, 10, 10);
 }
 .contact-me div {
   color:chocolate;
