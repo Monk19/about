@@ -31,7 +31,7 @@ div.nav-container {
 div.nav-container > a {
   color: chocolate;
   font-size: 2vw;
-  font-weight: normal;
+  font-weight: 500;
   text-decoration: none;
   font-family: "Lato", monospace;
   /* margin-right:%; */
@@ -210,8 +210,8 @@ div.lan-name {
   height: 100vh;
   font-size: 10px;
 }
-.exp{
-  grid-column:1/-1 ;
+.exp {
+  grid-column: 1/-1;
 }
 .projects {
   display: grid;
@@ -226,12 +226,12 @@ div.lan-name {
   justify-self: center;
   border-radius: 20px;
   background-color: rgb(170, 202, 233);
-  border:5px solid rgb(235, 233, 232);
+  border: 5px solid rgb(235, 233, 232);
   /* background-color: rgb(177, 124, 246); */
 }
-.omg{
+.omg {
   justify-content: center;
-  align-self:center;
+  align-self: center;
 }
 .exp {
   align-self: center;
@@ -255,16 +255,16 @@ div.lan-name {
   width: 100%;
 }
 .contact-me i {
-  font-size:5vw;
+  font-size: 5vw;
   color: rgb(10, 10, 10);
 }
 .contact-me div {
-  color:chocolate;
-  font-size:2vw;
+  color: chocolate;
+  font-size: 2vw;
 }
 .contact-me i:hover {
-  color: rgb(10, 10, 10);
+  color: rgb(245, 236, 236);
 }
-a{
-  font-size:10px;
+a {
+  font-size: 10px;
 }
