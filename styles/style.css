@@ -31,7 +31,7 @@ div.nav-container {
 /* ----- */
 div.nav-container > a {
   color: chocolate;
-  font-size: 3vw;
+  font-size:40%;
   font-weight: 500;
   text-decoration: none;
   font-family: "Lato", monospace;
@@ -97,7 +97,7 @@ div.intro > p {
 p.branch,
 div.content > h2 {
   color: rgb(236, 234, 232);
-  font-size: 2vw;
+  font-size:70%;
 }
 .timeline::after {
   content: "";
@@ -117,8 +117,8 @@ div.content > h2 {
   background-color: inherit;
   padding: 10px 40px;
   width: 50%;
-  margin-top: 50px;
-  border: 2px solid or;
+  margin-top: 20px;
+  /* border: 2px solid or; */
   /* background-color: rgb(77, 207, 240); */
 }
 
@@ -202,7 +202,8 @@ div.react > div {
   width: 20%;
 }
 div.lan-name {
-  color: rgb(248, 245, 244);
+  color: rgb(245, 241, 240);
+  font-size:1vw;
 }
 /*Experience*/
 .exp-pro {
@@ -232,7 +233,7 @@ div.lan-name {
   /* background-color: rgb(177, 124, 246); */
 }
 div.omg > h3 {
-  margin-top: 20vw;
+  margin-top: 15vw;
 }
 .exp {
   align-self: center;
@@ -240,7 +241,7 @@ div.omg > h3 {
 .projects h3 {
   text-align: center;
   color: rgb(22, 23, 24);
-  font-size: 3vw;
+  font-size: 2.5vh;
 }
 .projects p {
   margin-top: 20px;
@@ -261,7 +262,7 @@ div.aos-init {
   width: 100%;
 }
 .contact-me i {
-  font-size: 5vw;
+  font-size: 3vw;
   color: rgb(10, 10, 10);
 }
 .contact-me div {
