@@ -8,7 +8,21 @@
 html,
 body {
   font-size: 52.5px;
-  background-color: rgb(170, 202, 233);
+  /* background-color: rgb(170, 202, 233); */
+  background: #aa4b6b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #3b8d99,
+    #6b6b83,
+    #aa4b6b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #3b8d99,
+    #6b6b83,
+    #aa4b6b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   /* height: 100vh; */
   scroll-behavior: smooth;
 }
@@ -16,7 +30,7 @@ body {
 div.top-header {
   display: flex;
   flex-direction: row;
-  height: 10%;
+  height: 3%;
   width: 100%;
   /* padding:5px; */
   justify-content: flex-end;
@@ -24,14 +38,14 @@ div.top-header {
   /* font-size:10vw; */
 }
 div.nav-container {
-  padding: 5px;
+  padding: 3px;
 }
 /* Creating space between divs in top header */
 
 /* ----- */
 div.nav-container > a {
-  color: chocolate;
-  font-size:40%;
+  color: rgb(240, 219, 224);
+  font-size: 40%;
   font-weight: 500;
   text-decoration: none;
   font-family: "Lato", monospace;
@@ -42,7 +56,7 @@ div.nav-container > a {
 .on-mouseover {
   visibility: hidden;
   width: 0%;
-  background: rgb(243, 243, 243);
+  background: rgb(24, 5, 41);
   height: 2px;
   transition: width 1s, height 2s;
 }
@@ -51,10 +65,97 @@ a:hover + div.on-mouseover {
   width: 100%;
   height: 3px;
 }
+div.cv-button {
+  margin:auto;
+  height:10%;
+  width:50%;
+  background: rgba( 255, 255, 255, 0.10 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 15.0px );
+-webkit-backdrop-filter: blur( 15.0px );
+border-radius: 5px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 
 /*Intro Flex-box*/
+
+.intro {
+  height: 100vh;
+  padding: 30px;
+}
+
+.highlights {
+  /* background-color: rgb(170, 202, 233)
+  border-radius: 5%;
+  /* box-shadow: 0px 10px 20px rgb(198, 224, 241); */
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr 2fr;
+  grid-template-rows: 1fr 100px;
+  height: 90%;
+  width: 70%;
+
+  border-radius: 30%;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+img {
+  grid-column: 1/3;
+  /* background:rgb(172, 206, 240); */
+  height: 90%;
+  width: 90%;
+  border-radius: 1%;
+}
+
+.details {
+  grid-column: 3/5;
+  display: flex;
+  flex-direction: column;
+  /* background-color: slateblue; */
+}
+.about > h1 {
+  font-size: 60px;
+  color: rgb(244, 243, 245);
+}
+.about p {
+  font-size: 1.5vw;
+}
+th,
+td {
+  font-size: 15px;
+}
+td {
+  color: rgb(235, 240, 240);
+}
+
+.botcon {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3vw;
+}
+.botcon a {
+  text-decoration: none;
+  color: none;
+}
+.botcon i,
+.botcon div {
+  font-size: 3vw;
+  /* border-radius: 1000%; */
+  color: white;
+}
+.botcon i:hover{
+  color:rgb(136, 58, 48);
+  /* box-shadow:0px 10px 20px rgb(10, 10, 41); */
+}
+
 /* About-me */
-.about-me {
+/* .about-me {
   margin: 0.5vw;
   display: flex;
   flex-direction: row;
@@ -75,7 +176,7 @@ img {
 div.intro > p {
   color: rgb(246, 246, 246);
   font-size: 0.5em;
-}
+} */
 /* Education timeLine */
 .education {
   height: 100vh;
@@ -97,7 +198,7 @@ div.intro > p {
 p.branch,
 div.content > h2 {
   color: rgb(236, 234, 232);
-  font-size:70%;
+  font-size: 70%;
 }
 .timeline::after {
   content: "";
@@ -150,7 +251,7 @@ div.content > h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* min-height: 50vh; */
-  margin-left: 4vw;
+  margin-left: 9vw;
 
   grid-gap: space-around;
 }
@@ -203,7 +304,7 @@ div.react > div {
 }
 div.lan-name {
   color: rgb(245, 241, 240);
-  font-size:1vw;
+  font-size: 1vw;
 }
 /*Experience*/
 .exp-pro {
@@ -226,10 +327,12 @@ div.lan-name {
 .projects > div {
   align-self: center;
   justify-content: center;
-  /* border-radius: 20px; */
-  /* background-color: rgb(170, 202, 233); */
-  /* border: 5px solid rgb(235, 233, 232); */
-  /* background-color: rgb(177, 124, 246); */
+  background: rgba( 255, 255, 255, 0.40 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 13.5px );
+-webkit-backdrop-filter: blur( 13.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 div.omg > h3 {
   margin-top: 15vw;
@@ -239,7 +342,7 @@ div.omg > h3 {
 }
 .projects h3 {
   text-align: center;
-  color: rgb(22, 23, 24);
+  color: rgb(234, 229, 235);
   font-size: 2.5vh;
 }
 .projects p {
