@@ -36,6 +36,8 @@ div.top-header {
   justify-content: flex-end;
   align-items: center;
   /* font-size:10vw; */
+  position: fixed;
+  z-index:3;
 }
 div.nav-container {
   padding: 3px;
@@ -66,15 +68,15 @@ a:hover + div.on-mouseover {
   height: 3px;
 }
 div.cv-button {
-  margin:auto;
-  height:10%;
-  width:50%;
-  background: rgba( 255, 255, 255, 0.10 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 15.0px );
--webkit-backdrop-filter: blur( 15.0px );
-border-radius: 5px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin: auto;
+  height: 10%;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 /*Intro Flex-box*/
@@ -149,35 +151,11 @@ td {
   /* border-radius: 1000%; */
   color: white;
 }
-.botcon i:hover{
-  color:rgb(136, 58, 48);
+.botcon i:hover {
+  color: rgb(136, 58, 48);
   /* box-shadow:0px 10px 20px rgb(10, 10, 41); */
 }
 
-/* About-me */
-/* .about-me {
-  margin: 0.5vw;
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-h1.Greeting {
-  color: chocolate;
-  font-size: 5vw;
-}
-img {
-  height: 40vh;
-  width: 20vw;
-  border: 2px solid rgb(5, 5, 5);
-  border-radius: 100%;
-}
-div.intro > p {
-  color: rgb(246, 246, 246);
-  font-size: 0.5em;
-} */
-/* Education timeLine */
 .education {
   height: 100vh;
   width: 100%;
@@ -260,12 +238,17 @@ div.content > h2 {
   height: 20px;
   width: 80%;
   border-radius: 20px;
-  background-color: rgb(170, 202, 233);
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
   padding: 0.1px;
 }
 .progress {
-  background-color: rgb(5, 5, 5);
-  height: 15px;
+  background-color: rgb(243, 239, 239);
+  height: 18px;
   border-radius: 20px;
   width: 40%;
 }
@@ -274,7 +257,6 @@ div.py {
   height: 20px;
   width: 80%;
   border-radius: 20px;
-  background-color: rgb(170, 202, 233);
 }
 div.py > div {
   background-color: rgb(214, 74, 22);
@@ -306,74 +288,28 @@ div.lan-name {
   color: rgb(245, 241, 240);
   font-size: 1vw;
 }
-/*Experience*/
-.exp-pro {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  height: 120vh;
-  font-size: 20px;
-}
-
-.exp {
-  grid-column: 1/-1;
-}
+/*Props*/
 .projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
-  grid-template-rows: auto;
-  /* margin-top: 3vw; */
-}
-.projects > div {
-  align-self: center;
-  justify-content: center;
-  background: rgba( 255, 255, 255, 0.40 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 13.5px );
--webkit-backdrop-filter: blur( 13.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-div.omg > h3 {
-  margin-top: 15vw;
-}
-.exp {
-  align-self: center;
-}
-.projects h3 {
-  text-align: center;
-  color: rgb(234, 229, 235);
-  font-size: 2.5vh;
-}
-.projects p {
-  margin-top: 20px;
-  font-size: 1.5vw;
-  margin-left: 1vw;
-}
-/* div.aos-init {
-  height: 100%;
-  width: 100%;
-  border-radius: 10%;
-} */
-/* ---------------- */
-.contact-me {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+}
+.pros {
+  margin-top: 10vh;
+  height: 60%;
   width: 100%;
 }
-.contact-me i {
-  font-size: 3vw;
-  color: rgb(10, 10, 10);
+.pros img {
+  border-radius: 10%;
 }
-.contact-me div {
-  color: chocolate;
+.pros h3 {
+  text-align: center;
+  color: #eff6f1;
   font-size: 2vw;
 }
-.contact-me i:hover {
-  color: rgb(245, 236, 236);
-}
-a {
-  font-size: 10px;
+.Sleep {
+  color: #efeff5;
+  font-size: 3vw;
 }
