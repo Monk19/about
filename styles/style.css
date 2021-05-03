@@ -198,7 +198,7 @@ div.abut {
 /* Skills */
 .skills {
   height: 100vh;
-  border:2px solid black;
+  /* border:2px solid black; */
 }
 .ski-box{
   
@@ -237,7 +237,11 @@ h4.ps{
   color:var(--he);
   font-size:40px;
 }
-
+h2{
+  text-align: center;
+  color:var(--he);
+  font-size:50px;
+}
 /* SKill end */
 /* TimeLine */
 /* The actual timeline (the vertical ruler) */
