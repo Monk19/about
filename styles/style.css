@@ -401,9 +401,9 @@ h2 {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 20%;
   width: auto;
-  margin-top: -22px;
+  margin-top: 20px;
   padding: 16px;
   color: var(--he);
   font-weight: bold;
@@ -411,19 +411,24 @@ h2 {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  border: 2px solid var(--he);
+  border: 1px solid var(--he);
 }
 
 /* Position the "next button" to the right */
-.next {
+.next,
+.prev {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 1px 0 0 1px;
 }
-
+.prev {
+  right: 0;
+  top: 1px;
+  border-radius: 1px 0 0 1px;
+}
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 10px 20px gray;
 }
 
 /* The dots/bullets/indicators */
@@ -459,35 +464,32 @@ h2 {
   width: 90%;
   margin-right: 100px;
 }
-.form-container{
-  width:40%;
-  background:var(--cb);
-  padding:0px 50px;
-  box-shadow:0px 10px 20px black;
+.form-container {
+  width: 40%;
+  background: var(--cb);
+  padding: 0px 50px;
+  box-shadow: 0px 10px 20px black;
 }
-form{
-
-}
-
-input{
+input {
   border-style: none;
-  background:var(--cb);
-  width:100%;
-  height:30px;
-  border-bottom:2px solid gray;
+  background: var(--cb);
+  width: 100%;
+  height: 30px;
+  border-bottom: 2px solid gray;
 }
-textarea{
-  outline:none;
-  border:none;
+textarea {
+  outline: none;
+  border: none;
 }
-button[type="submit"]{
-  width:20%;
-  margin:5px;
+button[type="submit"] {
+  width: 20%;
+  margin: 5px;
   background: var(--gree);
 }
-input:focus{
+input:focus {
   outline: none;
 }
-input:hover,textarea:hover{
-  border-bottom:2px solid var(--gree);
+input:hover,
+textarea:hover {
+  border-bottom: 2px solid var(--gree);
 }
