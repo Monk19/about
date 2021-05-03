@@ -7,7 +7,7 @@
   --gree: #07cb79;
   --he: #3d4451;
   --ti: #c0e8d7;
-  --cb:#f5f4f2;
+  --cb: #f5f4f2;
 }
 html,
 body {
@@ -200,16 +200,15 @@ div.abut {
   height: 100vh;
   /* border:2px solid black; */
 }
-.ski-box{
-  
+.ski-box {
   margin: auto;
-  height:50%;
-  width:80%;
+  height: 50%;
+  width: 80%;
   display: grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin-top: 30px;
   /* border:2px solid black; */
-  background:#f5f4f2;
+  background: #f5f4f2;
   justify-content: center;
 }
 /*1st skill */
@@ -219,36 +218,45 @@ div.progress-bar {
   width: 80%;
   background: var(--ti);
 }
-div.right-grid{
-  margin-left:50px;
+div.right-grid {
+  margin-left: 50px;
 }
 div.progress {
   background: var(--gree);
   height: 100%;
   width: 60%;
 }
-div.py h6{
+div.py h6 {
   display: inline-block;
-  font-size:20px;
-  color:var(--he);
+  font-size: 20px;
+  color: var(--he);
 }
-h4.ps{
+h4.ps {
   text-align: center;
-  color:var(--he);
-  font-size:40px;
+  color: var(--he);
+  font-size: 40px;
 }
 h2{
   text-align: center;
-  color:var(--he);
-  font-size:50px;
+  color: var(--he);
+  font-size: 50px;
 }
+
+.timeline h2{
+  color:var(--gree);
+}
+
 /* SKill end */
+/* ----------------------------------------Photo--------GRid */
+
+/* Photo-grid END------ */
 /* TimeLine */
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  /* height:100vh; */
 }
 
 /* The actual timeline (the vertical ruler) */
