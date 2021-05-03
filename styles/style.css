@@ -4,27 +4,21 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  --gree: #07cb79;
+  --he: #3d4451;
+  --ti: #c0e8d7;
+  --cb:#f5f4f2;
 }
 html,
 body {
   font-size: 52.5px;
-  /* background-color: rgb(170, 202, 233); */
-  background: #aa4b6b; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #3b8d99,
-    #6b6b83,
-    #aa4b6b
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #3b8d99,
-    #6b6b83,
-    #aa4b6b
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgb(238, 236, 232); /* fallback for old browsers */
 
   /* height: 100vh; */
   scroll-behavior: smooth;
+}
+p {
+  font-size: 20px;
 }
 /*Nav Bar Styling*/
 div.top-header {
@@ -37,7 +31,7 @@ div.top-header {
   align-items: center;
   /* font-size:10vw; */
   position: fixed;
-  z-index:3;
+  z-index: 3;
 }
 div.nav-container {
   padding: 3px;
@@ -46,7 +40,7 @@ div.nav-container {
 
 /* ----- */
 div.nav-container > a {
-  color: rgb(240, 219, 224);
+  color: #c0c2c6;
   font-size: 40%;
   font-weight: 500;
   text-decoration: none;
@@ -58,15 +52,16 @@ div.nav-container > a {
 .on-mouseover {
   visibility: hidden;
   width: 0%;
-  background: rgb(24, 5, 41);
+  background: #07cb79;
   height: 2px;
-  transition: width 1s, height 2s;
+  transition: width 0.5s, height 1s;
 }
 a:hover + div.on-mouseover {
   visibility: visible;
   width: 100%;
-  height: 3px;
+  height: 2px;
 }
+
 div.cv-button {
   margin: auto;
   height: 10%;
@@ -92,12 +87,12 @@ div.cv-button {
   /* box-shadow: 0px 10px 20px rgb(198, 224, 241); */
   display: grid;
   grid-template-columns: 200px 1fr 1fr 2fr;
-  grid-template-rows: 1fr 100px;
+  grid-template-rows: 1fr 80px;
   height: 90%;
   width: 70%;
-
   border-radius: 30%;
   margin: auto;
+  margin-top: 30px;
   background: rgba(255, 255, 255, 0.4);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
@@ -105,6 +100,14 @@ div.cv-button {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+.yoloo {
+  font-size: 30%;
+  background-color: var(--gree);
+  color: white;
+  width: 10%;
+  text-align: center;
+}
+
 img {
   grid-column: 1/3;
   /* background:rgb(172, 206, 240); */
@@ -117,11 +120,13 @@ img {
   grid-column: 3/5;
   display: flex;
   flex-direction: column;
-  /* background-color: slateblue; */
 }
 .about > h1 {
   font-size: 60px;
-  color: rgb(244, 243, 245);
+  color: #3d4451;
+}
+.about {
+  margin-top: 8vh;
 }
 .about p {
   font-size: 1.5vw;
@@ -131,7 +136,7 @@ td {
   font-size: 15px;
 }
 td {
-  color: rgb(235, 240, 240);
+  color: #a5a8ae;
 }
 
 .botcon {
@@ -140,6 +145,7 @@ td {
   flex-direction: row;
   justify-content: center;
   gap: 3vw;
+  background-color: var(--gree);
 }
 .botcon a {
   text-decoration: none;
@@ -151,143 +157,189 @@ td {
   /* border-radius: 1000%; */
   color: white;
 }
+.botcon > div {
+  margin-top: 10px;
+}
 .botcon i:hover {
   color: rgb(136, 58, 48);
   /* box-shadow:0px 10px 20px rgb(10, 10, 41); */
 }
 
-.education {
-  height: 100vh;
-  width: 100%;
-  font-size: 2vw;
-  color: rgb(12, 12, 11);
+.cv {
+  margin: auto;
+  height: 30%;
+  width: 30%;
+  font-size: 20px;
+  text-align: center;
 }
+.cv a {
+  height: 100%;
+  text-decoration: none;
+  color: var(--he);
+  font-size: 7px;
+}
+button {
+  height: 100%;
+  width: 50%;
+  line-height: 50px;
+  border: 1px solid rgb(194, 189, 189);
+  border-radius: 5px;
+}
+button:hover {
+  box-shadow: 0px 10px 10px rgb(153, 148, 148);
+}
+div.abut {
+  position: relative;
+  margin-top: 500px;
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+/* Skills */
+.skills {
+  height: 100vh;
+  border:2px solid black;
+}
+.ski-box{
+  
+  margin: auto;
+  height:50%;
+  width:80%;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  margin-top: 30px;
+  /* border:2px solid black; */
+  background:#f5f4f2;
+  justify-content: center;
+}
+/*1st skill */
+div.progress-bar {
+  /* background:black; */
+  height: 10px;
+  width: 80%;
+  background: var(--ti);
+}
+div.right-grid{
+  margin-left:50px;
+}
+div.progress {
+  background: var(--gree);
+  height: 100%;
+  width: 60%;
+}
+div.py h6{
+  display: inline-block;
+  font-size:20px;
+  color:var(--he);
+}
+h4.ps{
+  text-align: center;
+  color:var(--he);
+  font-size:40px;
+}
+
+/* SKill end */
 /* TimeLine */
-/* .time {
-  height: 80vh;
-  padding-top: 100px;
-} */
+/* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-p.branch,
-div.content > h2 {
-  color: rgb(236, 234, 232);
-  font-size: 70%;
-}
+/* The actual timeline (the vertical ruler) */
 .timeline::after {
   content: "";
   position: absolute;
   width: 6px;
-  background-color: rgb(240, 235, 235);
+  background-color: var(--ti);
   top: 0;
   bottom: 0;
   left: 50%;
   margin-left: -3px;
-  z-index: 1;
-}
-.container {
-  height: 100%;
-  padding: 15px;
-  position: relative;
-  background-color: inherit;
-  padding: 10px 40px;
-  width: 50%;
-  margin-top: 20px;
-  /* border: 2px solid or; */
-  /* background-color: rgb(77, 207, 240); */
 }
 
-/* Creating circle */
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  font-size: 20px;
+}
+
+/* The circles on the timeline */
 .container::after {
   content: "";
   position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: rgb(228, 193, 37);
-  border: 4px solid #eff6f1;
-  top: 9px;
+  width: 15px;
+  height: 15px;
+  right: -7px;
+  background-color: var(--gree);
+  top: 15px;
   border-radius: 50%;
-  z-index: 12;
+  z-index: 1;
 }
-/* left placement */
+
+/* Place the container to the left */
 .left {
   left: 0;
 }
+
+/* Place the container to the right */
 .right {
   left: 50%;
 }
-.right::after {
-  left: -16px;
-}
-/* SKills -grid */
-.skills {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* min-height: 50vh; */
-  margin-left: 9vw;
 
-  grid-gap: space-around;
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
 }
-.progress-bar {
-  border: 2px solid rgba(237, 238, 240, 0.966);
-  height: 20px;
-  width: 80%;
-  border-radius: 20px;
-  background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-  padding: 0.1px;
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
 }
-.progress {
-  background-color: rgb(243, 239, 239);
-  height: 18px;
-  border-radius: 20px;
-  width: 40%;
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -9px;
 }
-div.py {
-  border: 2px solid rgba(241, 240, 237, 0.966);
-  height: 20px;
-  width: 80%;
-  border-radius: 20px;
+.time-top-band {
+  background: var(--gree);
+  height: 4px;
+  width: 100%;
 }
-div.py > div {
-  background-color: rgb(214, 74, 22);
-  height: 15px;
-  border-radius: 20px;
-  width: 60%;
+.time-top-band + h2 {
+  font-size: 15px;
+  text-align: center;
 }
-div.html > div {
-  background-color: rgb(93, 63, 53);
-  width: 80%;
+/* The actual content */
+.content {
+  /* padding: 20px 30px; */
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
 }
-div.sql > div {
-  background-color: rgb(236, 240, 24);
-  width: 77%;
-}
-div.git > div {
-  background-color: rgb(18, 153, 243);
-  width: 60%;
-}
-div.js > div {
-  background-color: rgb(15, 15, 15);
-  width: 70%;
-}
-div.react > div {
-  background-color: rgb(13, 245, 33);
-  width: 20%;
-}
-div.lan-name {
-  color: rgb(245, 241, 240);
-  font-size: 1vw;
-}
+
 /*Props*/
 .projects {
   display: flex;
