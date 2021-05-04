@@ -43,7 +43,7 @@ div.nav-container {
 
 /* ----- */
 div.nav-container > a {
-  color: #c0c2c6;
+  color: #737881;
   font-size: 40%;
   font-weight: 500;
   text-decoration: none;
@@ -133,10 +133,14 @@ img {
 .about p {
   font-size: 1.5vw;
 }
+table{
+  width:100%;
+}
 th,
 td {
   font-size: 15px;
 }
+
 td {
   color: #a5a8ae;
 }
@@ -533,9 +537,9 @@ div.imgg .m,
   font-size: 10px;
 }
 .imgg:hover .m {
-  background: rgba(170, 233, 141, 0.5);
+  background: rgba(234, 240, 231, 0.719);
   visibility: visible;
-  font-size:30px;
+  font-size: 30px;
   color: #0e0d0d;
   text-align: center;
 }
